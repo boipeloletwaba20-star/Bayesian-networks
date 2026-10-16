@@ -2,7 +2,7 @@
 
 **An expert-designed network versus one learned from the data: which predicts better, and which can you trust?**
 
-*EDAB 6808 Assignment 3 · B.Com Business Analytics (Hons), University of the Free State · Pair project, 2026*
+
 
 ---
 
@@ -43,10 +43,9 @@ Python · Google Colab · `bnlearn` · `pgmpy` · `pandas` · `numpy` · `scikit
 - **Structure learning is not causal discovery.** Two learned edges, *max heart rate → age* and *thalassemia → sex*, are clinically impossible.
 - **The expert network's target table has 108 rows**, and 39 of them have no supporting training patients. The learned network (57 parameters versus 194) is better supported by the data.
 
-![Expert DAG and learned DAG](images/dag_comparison.png)
 
 ## How to run
-1. Open the notebook in Google Colab: [Open in Colab](COLAB_LINK_HERE)
+1. Open the notebook in Google Colab: [Open in Colab]([COLAB_LINK_HERE]:(https://colab.research.google.com/drive/1XXeaCySrfGtZH3WrKWbYI-wXO9EbsAZP?usp=sharing))
 2. Upload `data/heart_disease_cleveland.csv` when prompted, or place it in the working folder.
 3. **Runtime → Run all.** The notebook saves `expert_bayesian_network.pkl`, `learned_bayesian_network.pkl`, `preprocessing.pkl` and the CPT CSVs.
 
@@ -63,19 +62,3 @@ bayesian-networks-heart-disease/
 │   └── preprocessing.pkl
 ├── cpts/
 │   └── (one CSV per node, per network)
-└── images/
-    ├── expert_dag.png
-    ├── learned_dag.png
-    └── dag_comparison.png
-```
-
-## Report and presentation
-- [Full report](REPORT_LINK_HERE) (view-only)
-- [Presentation slides](SLIDES_LINK_HERE) (view-only)
-- [Portfolio page](EPORTFOLIO_LINK_HERE)
-
-## References
-- Detrano, R., et al. (1989). International application of a new probability algorithm for the diagnosis of coronary artery disease. *American Journal of Cardiology, 64*(5), 304–310.
-- Koller, D., & Friedman, N. (2009). *Probabilistic Graphical Models: Principles and Techniques*. MIT Press.
-- Scutari, M. (2010). Learning Bayesian networks with the bnlearn R package. *Journal of Statistical Software, 35*(3), 1–22.
-- Tanaka, H., Monahan, K. D., & Seals, D. R. (2001). Age-predicted maximal heart rate revisited. *Journal of the American College of Cardiology, 37*(1), 153–156.
